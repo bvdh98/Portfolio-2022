@@ -1,0 +1,45 @@
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_section{
+    justify-content: center;
+    background-color: blue;
+}
+
+.work_section{
+    background-color: red;
+}
+
+.work_section > .col-10{
+    padding-top: 4rem;
+}
+
+.projects_para{
+    text-align: start;
+}
+
+.social_container{
+    display: flex;
+}
+
+.social_container > a{
+    margin: 0 0.5rem;
+}
+
+p{
+    text-align: center;
+}
+
+.card{
+    margin-bottom: 1rem;
+}
+
+.iconify.iconify--ic{
+    width: 5rem;
+    margin-left: 1rem;
+}
+
