@@ -1,7 +1,9 @@
 import React from "react";
-import { Card, Col } from "react-bootstrap";
+import { Card, Col, Button, Accordion, AccordionButton } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import "./Home.css";
+import AccordionItem from "react-bootstrap/esm/AccordionItem";
+import AccordionHeader from "react-bootstrap/esm/AccordionHeader";
 
 const Home = () => {
   const linkedIn = "https://www.linkedin.com/in/bencompsoft/";
@@ -16,8 +18,9 @@ const Home = () => {
           <p className="display-4">Ben Harrison</p>
           <p>Software Developer</p>
           <div className="social_container mb-4 mt-4">
+            {/* todo: resize icons */}
             <a href={linkedIn}>
-              <Icon icon="akar-icons:linkedin-box-fill"/>
+              <Icon icon="akar-icons:linkedin-box-fill" />
             </a>
             <a href={gitHub}>
               <Icon icon="akar-icons:github-fill" />
@@ -33,17 +36,16 @@ const Home = () => {
         <section className="work_section">
           <Col xs={10}>
             <p className="display-6 projects_para">Projects:</p>
-            <Card>
-              <Card.Header>
-                Web Development
-                <Icon icon="ic:baseline-arrow-drop-down-circle" />
-              </Card.Header>
-            </Card>
-            <Card>
-              <Card.Header>
-                Games<Icon icon="ic:baseline-arrow-drop-down-circle" />
-              </Card.Header>
-            </Card>
+            <Accordion>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>Web Development</Accordion.Header>
+                <Accordion.Body />
+              </Accordion.Item>
+              <Accordion.Item eventKey="1" className="games_accordion_item">
+                <Accordion.Header>Games</Accordion.Header>
+                <Accordion.Body />
+              </Accordion.Item>
+            </Accordion>
           </Col>
         </section>
       </Col>

@@ -1,3 +1,7 @@
+:root{
+    --accordionFontSize: 1rem;
+}
+
 section{
     height: 100vh;
     display: flex;
@@ -34,12 +38,38 @@ p{
     text-align: center;
 }
 
+p, a{
+    font-size: 1.5em;
+}
+
+button.accordion-button{
+    font-size: var(--accordionFontSize);
+    flex-wrap: wrap;
+}
+
 .card{
     margin-bottom: 1rem;
+}
+
+.project_bttn.btn-primary{
+    background-color: #F7F7F7;
+    color: black;
+    border: none;
 }
 
 .iconify.iconify--ic{
     width: 5rem;
     margin-left: 1rem;
 }
+
+.games_accordion_item{
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 425px) {
+    :root{
+        --accordionFontSize:1.25rem;
+    }
+}
+
 
