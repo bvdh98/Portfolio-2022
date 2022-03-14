@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, Col, Button, Accordion, AccordionButton } from "react-bootstrap";
+import { WebProjectCollection, gameProjects } from "./ProjectCollection";
+import Project from "./Project";
 import { Icon } from "@iconify/react";
 import "./Home.css";
-import AccordionItem from "react-bootstrap/esm/AccordionItem";
-import AccordionHeader from "react-bootstrap/esm/AccordionHeader";
 
 const Home = () => {
   const linkedIn = "https://www.linkedin.com/in/bencompsoft/";
@@ -12,8 +12,10 @@ const Home = () => {
 
   return (
     //add proper margin, height and padding bootstrap classes
+    //fix: mobile view too much vertical space taken up by resume row
+    //upload game code to github
     <div className="row pl-0 pr-0">
-      <Col xs={5} id="left_column" className="p-0">
+      <Col sm={5} id="left_column" className="p-0">
         <section className="info_section">
           <p className="display-4">Ben Harrison</p>
           <p>Software Developer</p>
@@ -29,21 +31,50 @@ const Home = () => {
               <Icon icon="carbon:email" />
             </a>
           </div>
-          <a>Resume</a>
+
+          <a className="resume_link">Resume</a>
         </section>
       </Col>
-      <Col xs={7} id="right_column" className="p-0">
+      <Col sm={7} id="right_column" className="p-0">
         <section className="work_section">
           <Col xs={10}>
-            <p className="display-6 projects_para">Projects:</p>
+            <p className="display-4 projects_para">Projects:</p>
             <Accordion>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Web Development</Accordion.Header>
-                <Accordion.Body />
+                <Accordion.Body>
+                  {WebProjectCollection.map(project =>
+                    <Project
+                      key={project.id}
+                      title={project.title}
+                      image={project.image}
+                      date={project.date}
+                      status={project.status}
+                      description={project.description}
+                      technologies={project.technologies}
+                      projectLink={project.projectLink}
+                      gitHubLink={project.gitHubLink}
+                    />
+                  )}
+                </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1" className="games_accordion_item">
                 <Accordion.Header>Games</Accordion.Header>
-                <Accordion.Body />
+                <Accordion.Body>
+                  {gameProjects.map(project =>
+                    <Project
+                      key={project.id}
+                      title={project.title}
+                      image={project.image}
+                      date={project.date}
+                      status={project.status}
+                      description={project.description}
+                      technologies={project.technologies}
+                      projectLink={project.projectLink}
+                      gitHubLink={project.gitHubLink}
+                    />
+                  )}
+                </Accordion.Body>
               </Accordion.Item>
             </Accordion>
           </Col>

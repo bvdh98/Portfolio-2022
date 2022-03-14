@@ -1,0 +1,33 @@
+.project_container{
+    margin-bottom: 3rem;
+}
+
+li{
+    font-size: 1.5rem;
+}
+
+.features_para{
+    text-align: start;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    margin:0 auto;
+}
+
+.project_links{
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 425px){
+    img{
+        height: 20vh;
+        object-fit: cover;
+    }
+    .accordion-body p{
+        font-size: 1.5rem;
+    }
+}
