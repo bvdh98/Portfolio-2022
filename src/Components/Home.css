@@ -11,11 +11,6 @@ section{
 
 .info_section{
     justify-content: center;
-    background-color: blue;
-}
-
-.work_section{
-    background-color: red;
 }
 
 .work_section > .col-10{
@@ -24,6 +19,7 @@ section{
 
 .projects_para{
     text-align: start;
+    color: black;
 }
 
 .social_container{
@@ -43,6 +39,10 @@ p,.resume_link{
     font-size: 1.5em;
 }
 
+p,.resume_link,svg{
+    color: white;
+}
+
 button.accordion-button{
     font-size: var(--accordionFontSize);
     flex-wrap: wrap;
@@ -53,21 +53,25 @@ button.accordion-button{
 }
 
 .project_bttn.btn-primary{
-    background-color: #F7F7F7;
+    background-color: white;
     color: black;
-    border: none;
-}
-
-.iconify.iconify--ic{
-    width: 5rem;
-    margin-left: 1rem;
+    
 }
 
 .games_accordion_item{
     margin-top: 2rem;
 }
 
+#left_column{
+    background-image: url("../img/forestBackground.jpg");
+}
+
+#left_column p,a{
+    color: white;
+}
+
 #right_column{
+    background-color: #EEEEEE;
     max-height: 100vh;
 }
 
