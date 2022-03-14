@@ -3,6 +3,7 @@ import { Card, Col, Button, Accordion, AccordionButton } from "react-bootstrap";
 import { WebProjectCollection, gameProjects } from "./ProjectCollection";
 import Project from "./Project";
 import { Icon } from "@iconify/react";
+import resume from "../resume/resumeFeb2022.pdf"
 import "./Home.css";
 
 const Home = () => {
@@ -31,8 +32,7 @@ const Home = () => {
               <Icon icon="carbon:email" />
             </a>
           </div>
-
-          <a className="resume_link">Resume</a>
+          <a href={resume} target="_blank" className="resume_link">Resume</a>
         </section>
       </Col>
       <Col sm={7} id="right_column" className="p-0">
