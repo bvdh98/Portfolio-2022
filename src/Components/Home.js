@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Button, Accordion, AccordionButton } from "react-bootstrap";
+import { Col, Accordion} from "react-bootstrap";
 import { WebProjectCollection, gameProjects } from "./ProjectCollection";
 import Project from "./Project";
 import { Icon } from "@iconify/react";
@@ -12,9 +12,6 @@ const Home = () => {
   const email = "mailto:benharrison7049@gmail.com";
 
   return (
-    //add proper margin, height and padding bootstrap classes
-    //fix: mobile view too much vertical space taken up by resume row
-    //upload game code to github
     <div className="row pl-0 pr-0">
       <Col sm={5} id="left_column" className="p-0">
         <section className="info_section">
