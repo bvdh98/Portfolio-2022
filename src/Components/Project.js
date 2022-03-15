@@ -28,9 +28,10 @@ const Project = ({
       <h5>
         Technologies used: {technologies}
       </h5>
-      <a href={projectLink} className="project_links">
-        Project Link
-      </a>
+      {projectLink &&
+        <a href={projectLink} className="project_links">
+          Project Link
+        </a>}
       <a href={gitHubLink} className="project_links">
         GitHub Link
       </a>

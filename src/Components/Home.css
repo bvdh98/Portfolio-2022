@@ -39,7 +39,7 @@ p,.resume_link{
     font-size: 1.5em;
 }
 
-p,.resume_link,svg{
+#left_column > p,.resume_link,svg{
     color: white;
 }
 
