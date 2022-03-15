@@ -54,7 +54,7 @@ export const WebProjectCollection = [
     technologies: "LAMP and JavaScript",
     date: "September - December 2020",
     projectLink: "https://youthenvironmentalchallenge.com/login.php",
-    gitHubLink: "https://github.com/yecuser/DrizzleYEC"
+    gitHubLink: "https://github.com/bvdh98/DrizzleYEC"
   },
   {
     id: 2,
