@@ -102,7 +102,8 @@ export const gameProjects = [
     ),
     status: "complete",
     technologies: "Unity",
-    date: "January 2021"
+    date: "January 2021",
+    gitHubLink:"https://github.com/bvdh98/Unity-FPS"
   },
   {
     id: 1,
@@ -121,6 +122,7 @@ export const gameProjects = [
     ),
     status: "complete",
     technologies: "Unity",
-    date: "December 2020"
+    date: "December 2020",
+    gitHubLink: "https://github.com/bvdh98/AngryBirds"
   }
 ];
