@@ -3,7 +3,7 @@ import { Col, Accordion} from "react-bootstrap";
 import { WebProjectCollection, gameProjects } from "./ProjectCollection";
 import Project from "./Project";
 import { Icon } from "@iconify/react";
-import resume from "../resume/resumeFeb2022.pdf"
+import resume from "../resume/resumeVersion4.pdf"
 import "./Home.css";
 
 const Home = () => {
