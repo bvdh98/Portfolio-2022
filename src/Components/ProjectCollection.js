@@ -47,7 +47,7 @@ export const WebProjectCollection = [
         points, which can be used to claim awards. My group and I refactored the
         login and registration, implemented the photo verification system, and
         improved the front-end. I focused on making the front end more visually
-        appealing and responsive
+        appealing and responsive.
       </p>
     ),
     status: "complete",
@@ -66,9 +66,9 @@ export const WebProjectCollection = [
         four others and I worked with Tim Collings, CEO of Canadian V-Chip
         Design Inc, to build a carbon calculator.Unlike most carbon calculators,
         this app doesn't require extensive manual input from users. Users upload
-        csv files of their BC Hydro and Fortis bills and enter data of their car
-        commutes, to then receive their carbon footprint and a comparison to the
-        average BC household. Built with: AngularJS, Django, and PostgreSQL
+        csv files of their BC Hydro and Fortis bills and enter data related to their
+        car usage. Next the user's carbon footprint is calculated, and a graph is 
+        generated which compares the user's footprint to the average BC household. 
       </p>
     ),
     status: "complete",
