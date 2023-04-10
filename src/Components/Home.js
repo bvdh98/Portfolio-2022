@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Accordion} from "react-bootstrap";
-import { WebProjectCollection, gameProjects } from "./ProjectCollection";
+import { WebProjectCollection, otherProjects} from "./ProjectCollection";
 import Project from "./Project";
 import { Icon } from "@iconify/react";
 import resume from "../resume/resume.pdf"
@@ -56,9 +56,9 @@ const Home = () => {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1" className="games_accordion_item">
-                <Accordion.Header>Games</Accordion.Header>
+                <Accordion.Header>Other Projects</Accordion.Header>
                 <Accordion.Body>
-                  {gameProjects.map(project =>
+                  {otherProjects.map(project =>
                     <Project
                       key={project.id}
                       title={project.title}

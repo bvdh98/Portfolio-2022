@@ -27,7 +27,7 @@ export const WebProjectCollection = [
     technologies: "React.JS and Firebase",
     date: "November 2021 - January 2022",
     projectLink: "https://iversonclub.herokuapp.com/login",
-    gitHubLink: "https://github.com/bvdh98/IversonClub"
+    gitHubLink: "https://github.com/bvdh98/IversonClub",
   },
   {
     id: 1,
@@ -38,7 +38,8 @@ export const WebProjectCollection = [
         This project was sponsored by{" "}
         <a href="https://www.drizzlesociety.org/">
           Drizzle Environmental Society
-        </a>. In this project we worked with Darcy Green, a founder of Drizzle
+        </a>
+        . In this project we worked with Darcy Green, a founder of Drizzle
         Environmental Society, to improve the Youth Environmental Challenge
         website, a site which challenges youth to take on environmental
         challenges in their community, such as participating in a community
@@ -54,7 +55,7 @@ export const WebProjectCollection = [
     technologies: "LAMP and JavaScript",
     date: "September - December 2020",
     projectLink: "https://youthenvironmentalchallenge.com/login.php",
-    gitHubLink: "https://github.com/bvdh98/DrizzleYEC"
+    gitHubLink: "https://github.com/bvdh98/DrizzleYEC",
   },
   {
     id: 2,
@@ -66,17 +67,61 @@ export const WebProjectCollection = [
         four others and I worked with Tim Collings, CEO of Canadian V-Chip
         Design Inc, to build a carbon calculator.Unlike most carbon calculators,
         this app doesn't require extensive manual input from users. Users upload
-        csv files of their BC Hydro and Fortis bills and enter data related to their
-        car usage. Next the user's carbon footprint is calculated, and a graph is 
-        generated which compares the user's footprint to the average BC household. 
+        csv files of their BC Hydro and Fortis bills and enter data related to
+        their car usage. Next the user's carbon footprint is calculated, and a
+        graph is generated which compares the user's footprint to the average BC
+        household.
       </p>
     ),
     status: "complete",
     technologies: "AngularJS, Django, and PostgreSQL",
     date: "April - May 2020",
     projectLink: "https://ourfootprint.herokuapp.com/",
-    gitHubLink: "https://github.com/bvdh98/OurFootprintCA"
-  }
+    gitHubLink: "https://github.com/bvdh98/OurFootprintCA",
+  },
+];
+
+export const otherProjects = [
+  {
+    id: 0,
+    title: "CallWeb Converter",
+    description: (
+      <p>
+        A Python program that converts a survey template word document into
+        CallWeb code. CallWeb is an obscure language used by government
+        employees to program online surveys. Within the team that I worked for,
+        employees would program the survey based off of a word document
+        template. Often they would just reuse an old CallWeb script and update
+        it as needed. I realized that this process was inefficient and could be
+        automated, which inspired me to make CallWeb Converter. I`m currently
+        still working on this project and researching the best way to get it to
+        work.
+      </p>
+    ),
+    status: "in progress",
+    technologies: "Python, Pandas",
+    date: "November 2022 - Present",
+  },
+  {
+    id: 1,
+    title: "Student Survey Completion Rate Report",
+    description: (
+      <p>
+        One team within the BC government is responsible for analyzing
+        statistics on post-secondary students within the province. They are in
+        charge of a survey for recent graduates. As the survey is in progress,
+        they create a report on the survey completion rates, which is
+        categorized by different schools. Normally they receive the raw data on
+        completion rates and create the excel report manually. I simplified this
+        process by automating it. My program will read the raw data as a Pandas
+        data frame and then create the report using the XlsxWriter module, which
+        is commonly used to write data to Excel worksheets.
+      </p>
+    ),
+    status: "Complete",
+    technologies: "Python, Pandas",
+    date: "February 2023 - March 2023",
+  },
 ];
 
 export const gameProjects = [
@@ -103,7 +148,7 @@ export const gameProjects = [
     status: "complete",
     technologies: "Unity",
     date: "January 2021",
-    gitHubLink:"https://github.com/bvdh98/Unity-FPS"
+    gitHubLink: "https://github.com/bvdh98/Unity-FPS",
   },
   {
     id: 1,
@@ -123,6 +168,6 @@ export const gameProjects = [
     status: "complete",
     technologies: "Unity",
     date: "December 2020",
-    gitHubLink: "https://github.com/bvdh98/AngryBirds"
-  }
+    gitHubLink: "https://github.com/bvdh98/AngryBirds",
+  },
 ];
