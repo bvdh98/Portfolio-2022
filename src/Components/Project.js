@@ -24,9 +24,11 @@ const Project = ({
           Project Link
         </a>
       )}
-      <a href={gitHubLink} className="project_links">
-        GitHub Link
-      </a>
+      {gitHubLink && (
+        <a href={gitHubLink} className="project_links">
+          GitHub Link
+        </a>
+      )}
     </div>
   );
 };
