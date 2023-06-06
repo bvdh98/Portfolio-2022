@@ -53,9 +53,7 @@ export const WebProjectCollection = [
     ),
     status: "complete",
     technologies: "LAMP and JavaScript",
-    date: "September - December 2020",
-    projectLink: "https://youthenvironmentalchallenge.com/login.php",
-    gitHubLink: "https://github.com/bvdh98/DrizzleYEC",
+    date: "September - December 2020"
   },
   {
     id: 2,
@@ -76,8 +74,7 @@ export const WebProjectCollection = [
     status: "complete",
     technologies: "AngularJS, Django, and PostgreSQL",
     date: "April - May 2020",
-    projectLink: "https://ourfootprint.herokuapp.com/",
-    gitHubLink: "https://github.com/bvdh98/OurFootprintCA",
+    gitHubLink: "https://github.com/bvdh98/OurFootprintCA"
   },
 ];
 
@@ -101,6 +98,7 @@ export const otherProjects = [
     status: "in progress",
     technologies: "Python, Pandas",
     date: "November 2022 - Present",
+    gitHubLink: "https://github.com/bvdh98/CallWeb-Converter"
   },
   {
     id: 1,
@@ -121,6 +119,7 @@ export const otherProjects = [
     status: "Complete",
     technologies: "Python, Pandas",
     date: "February 2023 - March 2023",
+    gitHubLink: "https://github.com/bcgov/baccalaureate-grads-survey"
   },
 ];
 
