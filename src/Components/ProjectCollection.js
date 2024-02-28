@@ -26,7 +26,7 @@ export const WebProjectCollection = [
     status: "complete",
     technologies: "React.JS and Firebase",
     date: "November 2021 - January 2022",
-    projectLink: "https://iversonclub.herokuapp.com/login",
+    // projectLink: "https://iversonclub.herokuapp.com/login",
     gitHubLink: "https://github.com/bvdh98/IversonClub",
   },
   {
@@ -95,9 +95,9 @@ export const otherProjects = [
         work.
       </p>
     ),
-    status: "in progress",
+    status: "complete",
     technologies: "Python, Pandas",
-    date: "November 2022 - Present",
+    date: "November 2022 - Jun 2023",
     gitHubLink: "https://github.com/bvdh98/CallWeb-Converter"
   },
   {
